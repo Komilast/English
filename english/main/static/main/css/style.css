@@ -11,7 +11,7 @@ body {
 #wrapper {
     width: 80%;
     max-width: 1700px;
-    background: #666;
+    /*background: #666;*/
     margin: 0 auto;
 }
 
@@ -33,3 +33,24 @@ body {
     align-self: center;
     margin-left: auto;
 }
+
+#navbar {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-button {
+    background: #fff;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.nav-button-text {
+    text-align: center;
+    line-height: 30px;
+}
+
+/* todo: Сделать адаптивным навбар*/

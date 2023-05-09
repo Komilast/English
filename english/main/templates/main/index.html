@@ -13,23 +13,13 @@
         </div>
     </div>
     <div id="navbar">
+        {% for navbar_item in navbar_list %}
         <div class="nav-button">
             <p class="nav-button-text">
-
+                {{ navbar_item }}
             </p>
         </div>
-        <div class="nav-button">
-            <p class="nav-button-text"></p>
-        </div>
-        <div class="nav-button">
-            <p class="nav-button-text"></p>
-        </div>
-        <div class="nav-button">
-            <p class="nav-button-text"></p>
-        </div>
-        <div class="nav-button">
-            <p class="nav-button-text"></p>
-        </div>
+        {% endfor %}
     </div>
 </div>
 </body>
