@@ -4,6 +4,10 @@
     font-family: 'Comfortaa', cursive;
 }
 
+html {
+    font-size: 100%;
+}
+
 body {
     background: #333;
 }
@@ -38,19 +42,23 @@ body {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .nav-button {
     background: #fff;
-    width: 130px;
-    height: 30px;
+    height: 2.5vw;
+    max-height: 50px;
+    width: 100%;
     border-radius: 5px;
+}
+
+.nav-button:not(:last-child) {
+    margin-right: 10px;
 }
 
 .nav-button-text {
     text-align: center;
-    line-height: 30px;
+    line-height: 2.5vw;
+    font-size: calc(0.7rem + 0.5vw);
+    white-space: nowrap;
 }
-
-/* todo: Сделать адаптивным навбар*/
