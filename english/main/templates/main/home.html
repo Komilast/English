@@ -1,1 +1,25 @@
-{% extends 'main/index.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Beelango: Изучение английского</title>
+    <link type="text/css" href="{% static 'main/css/home.css' %}" rel="stylesheet">
+    <link href="{% static 'main/fonts/Comfortaa-Bold.ttf' %}">
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <img src="{% static 'main/images/bee-100.png' %}" alt="" id="logo">
+        <p id="site-name"><span class="text-orange">Bee</span>lango</p>
+    </div>
+    <div id="welcome-wrapper">
+        <img src="{% static 'main/images/welcome-background.png' %}" alt="" id="welcome-background">
+        <p id="welcome-text">
+            Изучайте английский на
+            <span class="welcome-text-site-name text-orange">Bee</span><span class="welcome-text-site-name">lango</span>
+        </p>
+        <a id="welcome-start-button" href="/">Начать</a>
+    </div>
+</div>
+</body>
+</html>

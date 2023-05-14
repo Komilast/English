@@ -6,4 +6,4 @@ def home(request):
         'title': 'Изучение английского',
         'navbar_list': ['Моё обучение', 'Форум', 'Карточки слов', 'Уроки', 'Другое']
     }
-    return render(request, 'main/index.html', args)
+    return render(request, 'main/home.html', args)
